@@ -42,7 +42,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className='title'>
       <h1>Phonebook</h1>
       <ContactForm
         onAdd={addContact} />
