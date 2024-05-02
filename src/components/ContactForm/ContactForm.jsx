@@ -13,18 +13,16 @@ const ContactForm = ({ onAdd }) => {
 
     const nameFieldId = nanoid();
     const numberFieldId = nanoid();
-    const newId = nanoid();
 
 
     const initialValues = {
         name: "",
         number: "",
-        id: "",
     };
 
     const handleSubmit = (values, actions) => {
         onAdd({
-            id: newId,
+            id: nanoid(),
             name: values.name,
             number: values.number,
         });
